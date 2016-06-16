@@ -154,7 +154,12 @@ var _getItemAt,
 		var onComplete = function() {
 			item.loading = false;
 			item.loaded = true;
-
+			if (!item.w) {
+				item.w = this.width;
+			}
+			if (!item.h) {
+				item.h = this.height;
+			}
 			if(item.loadComplete) {
 				item.loadComplete(item);
 			} else {
