@@ -2830,10 +2830,10 @@ var _getItemAt,
 			item.loading = false;
 			item.loaded = true;
 			if (!item.w) {
-				item.w = this.width;
+				item.w = this.width * 4;
 			}
 			if (!item.h) {
-				item.h = this.height;
+				item.h = this.height * 4;
 			}
 			if(item.loadComplete) {
 				item.loadComplete(item);
