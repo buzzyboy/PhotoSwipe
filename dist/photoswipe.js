@@ -1544,7 +1544,7 @@ var _gestureStartTime,
 					}
 					
 					// drag right
-					if( (startOverDiff <= 0 || mainScrollDiff < 0) && _getNumItems() > 1 ) {
+					if( (startOverDiff <= 0 || mainScrollDiff < 0) /* && _getNumItems() > 1 */) {
 						newMainScrollPos = newMainScrollPosition;
 						if(mainScrollDiff < 0 && newMainScrollPosition > _startMainScrollPos.x) {
 							newMainScrollPos = _startMainScrollPos.x;
@@ -1564,7 +1564,7 @@ var _gestureStartTime,
 						startOverDiff = _startPanOffset[axis] - _currPanBounds.max[axis];
 					}
 
-					if( (startOverDiff <= 0 || mainScrollDiff > 0) && _getNumItems() > 1 ) {
+					if( (startOverDiff <= 0 || mainScrollDiff > 0) /* && _getNumItems() > 1 */) {
 						newMainScrollPos = newMainScrollPosition;
 
 						if(mainScrollDiff > 0 && newMainScrollPosition < _startMainScrollPos.x) {
