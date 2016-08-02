@@ -1,4 +1,4 @@
-/*! PhotoSwipe - v4.1.1 - 2016-06-16
+/*! PhotoSwipe - v4.1.1 - 2016-08-02
 * http://photoswipe.com
 * Copyright (c) 2016 Dmitry Semenov; */
 (function (root, factory) { 
@@ -2351,7 +2351,7 @@ var _gestureStartTime,
 		
 		_mainScrollAnimating = true;
 		
-		_shout('mainScrollAnimStart');
+		_shout('mainScrollAnimStart', itemsDiff, _indexDiff);
 
 		_animateProp('mainScroll', _mainScrollPos.x, animateToX, finishAnimDuration, framework.easing.cubic.out, 
 			_moveMainScroll,
